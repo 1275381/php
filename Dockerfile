@@ -1,5 +1,6 @@
 FROM        debian:8.0
 MAINTAINER  andystanton
+ENV         LANG C.UTF-8
 RUN         apt-get update -qq -y && \
             apt-get install -y patch php5-cli && \
             apt-get clean && \
